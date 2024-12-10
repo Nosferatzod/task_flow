@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>TaskFlow</h1>
+        <button class="btn-add-task">Adicionar Tarefa</button>
+    </header>
+    <main>
+        <form class="form-add-task hidden">
+            <textarea class="app__form-textarea" placeholder="Descreva sua tarefa..."></textarea>
+            <button type="submit">Adicionar</button>
+        </form>
+        <section class="task-list">
+            <h2>Suas Tarefas</h2>
+            <ul class="app__section-task-list"></ul>
+        </section>
+        <section class="timer">
+            <h3>Tempo de Foco</h3>
+            <p id="focusTimer">00:00</p>
+            <button id="startFocusButton">Iniciar Foco</button>
+        </section>
+    </main>
+</body>
+
+</html>
